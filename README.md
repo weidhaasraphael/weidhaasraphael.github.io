@@ -31,4 +31,4 @@ February 2025: Started my PhD at Aalto University, Department of Computer Scienc
 
 
 
-© Raphael Weidhaas
+© Raphael Weidhaas - 2026
