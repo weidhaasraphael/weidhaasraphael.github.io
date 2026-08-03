@@ -29,6 +29,6 @@ August 2026: Attended the "Cybercrime Summer School" at the University of Strath
 
 February 2025: Started my PhD at Aalto University, Department of Computer Science.
 
-
+____
 
 © Raphael Weidhaas - 2026
