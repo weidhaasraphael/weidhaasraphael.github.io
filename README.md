@@ -28,3 +28,7 @@ October 2025 - [Publication from previous job](https://gispoint.de/gisopen-paper
 August 2026: Attended the "Cybercrime Summer School" at the University of Strathclyde in Glasgow, Scotland.
 
 February 2025: Started my PhD at Aalto University, Department of Computer Science.
+
+
+
+© Raphael Weidhaas
