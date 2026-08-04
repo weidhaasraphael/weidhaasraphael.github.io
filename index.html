@@ -3,23 +3,55 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My GitHub Pages Site</title>
+  <title>Raphael — Aalto University</title>
   <style>
-    :root { --bg: #0f172a; --fg: #e2e8f0; --accent: #38bdf8; }
-    html, body { margin: 0; padding: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background: var(--bg); color: var(--fg); }
-    .wrap { min-height: 100vh; display: grid; place-items: center; text-align: center; padding: 2rem; }
-    h1 { margin: 0 0 0.5rem; font-size: 2rem; }
-    p { margin: 0.5rem 0 0; line-height: 1.6; }
+    :root { --bg: #0f172a; --fg: #e2e8f0; --accent: #38bdf8; --muted: #94a3b8; }
+    html, body {
+      margin: 0; padding: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: var(--bg); color: var(--fg);
+      line-height: 1.65;
+    }
     a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; }
+    header, main, footer { padding: 1.25rem; }
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    h1, h2, h3 { margin: 0 0 0.5rem; line-height: 1.25; }
+    h1 { font-size: 2rem; }
+    p { margin: 0 0 1rem; text-align: justify; }
+    ul { margin: 0 0 1rem 1.25rem; padding: 0; }
+    li { margin: 0 0 0.5rem; text-align: justify; }
+    .muted { color: var(--muted); }
   </style>
 </head>
 <body>
-  <main class="wrap">
-    <div>
-      <h1>Hello, world!</h1>
-      <p>This site is hosted with GitHub Pages.</p>
-      <p><a href="https://github.com/USERNAME">View my GitHub</a></p>
+  <main>
+    <div class="container">
+      <p>Hi!</p>
+
+      <p>
+        I am Raphael, a PhD student at Aalto University’s Department of Computer Science, based in Helsinki, Finland. I am part of the research group ‘Humans, Security, and Privacy’.
+      </p>
+
+      <p>
+        My research examines how emotions and other psychological factors shape cybersecurity behavior, with a focus on social engineering and related attack vectors. By understanding these factors, I aim to strengthen human resilience to cyber threats. Current work revolves around questions such as:
+      </p>
+
+      <ul>
+        <li>How do emotions affect users’ behavior during social engineering attacks?</li>
+        <li>How do emotions and sociocultural norms shape people’s understanding of security threats?</li>
+      </ul>
+
+      <p>
+        To answer these questions, I use mixed-methods approaches informed by psychology and human-computer interaction, including interviews, questionnaires, and laboratory observations.
+      </p>
+
+      <p>
+        Before starting my PhD, I worked as a course teacher at Aalto University’s School of Arts, Design and Architecture. I was part of the teaching team for the studio course “Computational Methodologies in Landscape Architecture and Urbanism — From Data Points to Spatial Experience”, which focused on experimental and artistic approaches to data interaction and storytelling.
+      </p>
     </div>
   </main>
 </body>
