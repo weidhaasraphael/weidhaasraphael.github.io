@@ -15,80 +15,103 @@
     a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; }
     header, main, footer { padding: 1.25rem; }
+
     .container {
       max-width: 860px;
       margin: 0 auto;
     }
-    .center { min-height: 100vh; display: grid; place-items: center; padding: 2rem; }
+
+    /* Vertically centered hero section */
+    .hero {
+      min-height: 100vh;         /* fill viewport */
+      display: grid;
+      place-items: center;        /* center container both axes */
+      padding: 2rem 1.25rem;      /* breathing room on small screens */
+    }
+
     h1, h2, h3 { margin: 0 0 0.5rem; line-height: 1.25; }
     h1 { font-size: 2rem; }
     p { margin: 0 0 1rem; text-align: justify; }
     ul { margin: 0 0 1rem 1.25rem; padding: 0; }
     li { margin: 0 0 0.5rem; text-align: justify; }
     .muted { color: var(--muted); }
+
     .sep {
-    border: 0;
-    border-top: 1px solid #e2e8f0;
-    margin: 2rem 0;                
-  }
+      border: 0;
+      border-top: 1px solid #e2e8f0;
+      margin: 2rem 0;
+    }
   </style>
 </head>
 <body>
   <main>
-    <div class="container">
-      <p>Hi!</p>
+    <!-- HERO (vertically centered) -->
+    <section class="hero">
+      <div class="container">
+        <h1>Raphael Weidhaas</h1>
 
-      <p>
-        I am Raphael, a PhD student at Aalto University’s Department of Computer Science, based in Helsinki, Finland. I am part of the research group <a href="https://www.aalto.fi/en/department-of-computer-science/research-group-humans-security-and-privacy" target="_blank" rel="noopener noreferrer">‘Humans, Security, and Privacy’</a>.
-      </p>
+        <p>Hi!</p>
 
-      <p>
-        My research examines how emotions and other psychological factors shape cybersecurity behavior, with a focus on social engineering and related attack vectors. By understanding these factors, I aim to strengthen human resilience to cyber threats. Current work revolves around questions such as:
-      </p>
+        <p>
+          I am Raphael, a PhD student at Aalto University’s Department of Computer Science, based in Helsinki, Finland. I am part of the research group
+          <a href="https://www.aalto.fi/en/department-of-computer-science/research-group-humans-security-and-privacy" target="_blank" rel="noopener noreferrer">‘Humans, Security, and Privacy’</a>.
+        </p>
 
-      <ul>
-        <li>How do emotions affect users’ behavior during social engineering attacks?</li>
-        <li>How do emotions and sociocultural norms shape people’s understanding of security threats?</li>
-      </ul>
+        <p>
+          My research examines how emotions and other psychological factors shape cybersecurity behavior, with a focus on social engineering and related attack vectors. By understanding these factors, I aim to strengthen human resilience to cyber threats. Current work revolves around questions such as:
+        </p>
 
-      <p>
-        To answer these questions, I use mixed-methods approaches informed by psychology and human-computer interaction, including interviews, questionnaires, and laboratory observations.
-      </p>
+        <ul>
+          <li>How do emotions affect users’ behavior during social engineering attacks?</li>
+          <li>How do emotions and sociocultural norms shape people’s understanding of security threats?</li>
+        </ul>
 
-      <p>
-        Before starting my PhD, I worked as a course teacher at Aalto University’s School of Arts, Design and Architecture. I was part of the teaching team for the studio course “Computational Methodologies in Landscape Architecture and Urbanism — From Data Points to Spatial Experience”, which focused on experimental and artistic approaches to data interaction and storytelling.
-      </p>
-    </div>
-    <hr>
+        <p>
+          To answer these questions, I use mixed-methods approaches informed by psychology and human-computer interaction, including interviews, questionnaires, and laboratory observations.
+        </p>
+
+        <p>
+          Before starting my PhD, I worked as a course teacher at Aalto University’s School of Arts, Design and Architecture. I was part of the teaching team for the studio course “Computational Methodologies in Landscape Architecture and Urbanism — From Data Points to Spatial Experience”, which focused on experimental and artistic approaches to data interaction and storytelling.
+        </p>
+      </div>
+    </section>
+
+    <hr class="sep">
+
+    <!-- NEWS (normal flow) -->
     <div class="container">
       <h1>News</h1>
 
       <p>
-        May 2026: Accepted Paper at <a href="https://soups.page/" target="_blank" rel="noopener noreferrer">SOUPS 2026</a> --> Weidhaas, R., Preuschen, A. von, & Distler, V. (2026, August). I didn’t know I would be this excited not to be scammed. Exploring emotional and behavioral responses during phishing attacks. <em>Twentysecond Symposium on Usable Privacy and Security (SOUPS 2026)</em>.
-        
-        <a href="https://soups.page/" target="_blank" rel="noopener noreferrer">SOUPS 2026</a>.
+        <strong>May 2026:</strong> Accepted Paper at
+        <a href="https://soups.page/" target="_blank" rel="noopener noreferrer">SOUPS 2026</a>
+        --> Weidhaas, R., Preuschen, A. von, &amp; Distler, V. (2026, August). I didn’t know I would be this excited not to be scammed. Exploring emotional and behavioral responses during phishing attacks.
+        <em>Twentysecond Symposium on Usable Privacy and Security (SOUPS 2026)</em>.
       </p>
 
       <p>
-        April 2026: Our teaching team was nominated as a finalist for the European Association for Architectural Education <a href="https://www.eaae.eu/news-and-events/events/finalists-eaae-pedagogy-awards-2026" target="_blank" rel="noopener noreferrer">(EAAE) 2026 Pedagogy Awards</a>.
+        <strong>April 2026:</strong> Our teaching team was nominated as a finalist for the European Association for Architectural Education
+        <a href="https://www.eaae.eu/news-and-events/events/finalists-eaae-pedagogy-awards-2026" target="_blank" rel="noopener noreferrer">(EAAE) 2026 Pedagogy Awards</a>.
       </p>
 
       <p>
-        November 2025: First time advising a master thesis.
+        <strong>November 2025:</strong> First time advising a master thesis.
       </p>
 
       <p>
-        October 2025: <a href="https://gispoint.de/gisopen-paper/8394-immersive-vr-driven-landscapes-exploring-climate-adaptive-ecosystem-design.html?IDjournalTitle=6&cHash=a61907bf26c28fde2dfbb235c83035fe" target="_blank" rel="noopener noreferrer">Publication</a> (from previous job) --> Fricker, P. D. P., & Weidhaas, R. (2025). Immersive VR-Driven Landscapes: Exploring Climate-Adaptive Ecosystem Design. <em>Journal of Digital Landscape Architecture</em>, 2025(10), 114-124.
+        <strong>October 2025:</strong>
+        <a href="https://gispoint.de/gisopen-paper/8394-immersive-vr-driven-landscapes-exploring-climate-adaptive-ecosystem-design.html?IDjournalTitle=6&amp;cHash=a61907bf26c28fde2dfbb235c83035fe" target="_blank" rel="noopener noreferrer">Publication</a>
+        (from previous job) --> Fricker, P. D. P., &amp; Weidhaas, R. (2025). Immersive VR-Driven Landscapes: Exploring Climate-Adaptive Ecosystem Design.
+        <em>Journal of Digital Landscape Architecture</em>, 2025(10), 114–124.
       </p>
 
       <p>
-        August 2026: Attended the "Cybercrime Summer School" at the University of Strathclyde in Glasgow, Scotland.
+        <strong>August 2026:</strong> Attended the "Cybercrime Summer School" at the University of Strathclyde in Glasgow, Scotland.
       </p>
 
       <p>
-        February 2025: Started my PhD at Aalto University, Department of Computer Science.
+        <strong>February 2025:</strong> Started my PhD at Aalto University, Department of Computer Science.
       </p>
-      
     </div>
   </main>
 </body>
