@@ -16,17 +16,12 @@
     a:hover { text-decoration: underline; }
     header, main, footer { padding: 1.25rem; }
 
+    /* Extra space from the top so the first heading isn't tight */
+    main { padding-top: 3rem; }
+
     .container {
       max-width: 860px;
       margin: 0 auto;
-    }
-
-    /* Vertically centered hero section */
-    .hero {
-      min-height: 100vh;         /* fill viewport */
-      display: grid;
-      place-items: center;        /* center container both axes */
-      padding: 2rem 1.25rem;      /* breathing room on small screens */
     }
 
     h1, h2, h3 { margin: 0 0 0.5rem; line-height: 1.25; }
@@ -41,44 +36,45 @@
       border-top: 1px solid #e2e8f0;
       margin: 2rem 0;
     }
+
+    @media (max-width: 600px) {
+  main { padding-top: 2rem; }
+}
+
   </style>
 </head>
 <body>
   <main>
-    <!-- HERO (vertically centered) -->
-    <section class="hero">
-      <div class="container">
-        <h1>Raphael Weidhaas</h1>
+    <div class="container">
+      <h1>Raphael Weidhaas</h1>
 
-        <p>Hi!</p>
+      <p>Hi!</p>
 
-        <p>
-          I am Raphael, a PhD student at Aalto University’s Department of Computer Science, based in Helsinki, Finland. I am part of the research group
-          <a href="https://www.aalto.fi/en/department-of-computer-science/research-group-humans-security-and-privacy" target="_blank" rel="noopener noreferrer">‘Humans, Security, and Privacy’</a>.
-        </p>
+      <p>
+        I am Raphael, a PhD student at Aalto University’s Department of Computer Science, based in Helsinki, Finland. I am part of the research group
+        <a href="https://www.aalto.fi/en/department-of-computer-science/research-group-humans-security-and-privacy" target="_blank" rel="noopener noreferrer">‘Humans, Security, and Privacy’</a>.
+      </p>
 
-        <p>
-          My research examines how emotions and other psychological factors shape cybersecurity behavior, with a focus on social engineering and related attack vectors. By understanding these factors, I aim to strengthen human resilience to cyber threats. Current work revolves around questions such as:
-        </p>
+      <p>
+        My research examines how emotions and other psychological factors shape cybersecurity behavior, with a focus on social engineering and related attack vectors. By understanding these factors, I aim to strengthen human resilience to cyber threats. Current work revolves around questions such as:
+      </p>
 
-        <ul>
-          <li>How do emotions affect users’ behavior during social engineering attacks?</li>
-          <li>How do emotions and sociocultural norms shape people’s understanding of security threats?</li>
-        </ul>
+      <ul>
+        <li>How do emotions affect users’ behavior during social engineering attacks?</li>
+        <li>How do emotions and sociocultural norms shape people’s understanding of security threats?</li>
+      </ul>
 
-        <p>
-          To answer these questions, I use mixed-methods approaches informed by psychology and human-computer interaction, including interviews, questionnaires, and laboratory observations.
-        </p>
+      <p>
+        To answer these questions, I use mixed-methods approaches informed by psychology and human-computer interaction, including interviews, questionnaires, and laboratory observations.
+      </p>
 
-        <p>
-          Before starting my PhD, I worked as a course teacher at Aalto University’s School of Arts, Design and Architecture. I was part of the teaching team for the studio course “Computational Methodologies in Landscape Architecture and Urbanism — From Data Points to Spatial Experience”, which focused on experimental and artistic approaches to data interaction and storytelling.
-        </p>
-      </div>
-    </section>
+      <p>
+        Before starting my PhD, I worked as a course teacher at Aalto University’s School of Arts, Design and Architecture. I was part of the teaching team for the studio course “Computational Methodologies in Landscape Architecture and Urbanism — From Data Points to Spatial Experience”, which focused on experimental and artistic approaches to data interaction and storytelling.
+      </p>
+    </div>
 
     <hr class="sep">
 
-    <!-- NEWS (normal flow) -->
     <div class="container">
       <h1>News</h1>
 
