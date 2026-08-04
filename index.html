@@ -5,13 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Raphael's Researcher Page</title>
   <style>
-    :root { --bg: #0f172a; --fg: #e2e8f0; --accent: #38bdf8; --muted: #94a3b8; }
+    :root { /* background and text */
+      --bg: #ffffff;      /* white background */
+      --fg: #111827;      /* near-black text (easier on eyes than pure #000) */
+      --accent: #2563eb;  /* link color (optional tweak) */
+      --muted: #6b7280;   /* muted text on white */
+       }
+
+    /* assign background and text color values to body */
     html, body {
       margin: 0; padding: 0;
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       background: var(--bg); color: var(--fg);
       line-height: 1.65;
     }
+
+    /* assign color values to links */
     a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; }
     header, main, footer { padding: 1.25rem; }
@@ -19,27 +28,37 @@
     /* Extra space from the top so the first heading isn't tight */
     main { padding-top: 3rem; }
 
+    /* Same tweak but for mobile so its a bit nicer */
+    @media (max-width: 600px) {
+  main { padding-top: 2rem; }
+}
+
     .container {
       max-width: 860px;
       margin: 0 auto;
     }
 
-    h1, h2, h3 { margin: 0 0 0.5rem; line-height: 1.25; }
+    /* Define header font etc. */
+    h1, h2, h3 { 
+      margin: 0 0 0.5rem; 
+      line-height: 1.25;
+      font-family: "Courier New", Courier, monospace;
+      font-weight: 700; /* ensure bold */
+    }
     h1 { font-size: 2rem; }
     p { margin: 0 0 1rem; text-align: justify; }
     ul { margin: 0 0 1rem 1.25rem; padding: 0; }
     li { margin: 0 0 0.5rem; text-align: justify; }
     .muted { color: var(--muted); }
 
+    /* define seperating line before news */
     .sep {
       border: 0;
-      border-top: 1px solid #e2e8f0;
+      border-top: 1px solid #e5e7eb; /* light gray line on white */
       margin: 2rem 0;
     }
 
-    @media (max-width: 600px) {
-  main { padding-top: 2rem; }
-}
+    /* MAIN DOCUMENT */
 
   </style>
 </head>
